@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF6FA4322B639CBC00411293 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6FA4312B639CBC00411293 /* Onboarding.swift */; };
 		CF7BA5B72B62830F00BF3257 /* LittleLemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7BA5B62B62830F00BF3257 /* LittleLemonApp.swift */; };
 		CF7BA5B92B62830F00BF3257 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7BA5B82B62830F00BF3257 /* ContentView.swift */; };
 		CF7BA5BB2B62831000BF3257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7BA5BA2B62831000BF3257 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF6FA4312B639CBC00411293 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		CF7BA5B32B62830F00BF3257 /* LittleLemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7BA5B62B62830F00BF3257 /* LittleLemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonApp.swift; sourceTree = "<group>"; };
 		CF7BA5B82B62830F00BF3257 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				CF7BA5B62B62830F00BF3257 /* LittleLemonApp.swift */,
 				CF7BA5B82B62830F00BF3257 /* ContentView.swift */,
+				CF6FA4312B639CBC00411293 /* Onboarding.swift */,
 				CF7BA5BA2B62831000BF3257 /* Assets.xcassets */,
 				CF7BA5BC2B62831000BF3257 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6FA4322B639CBC00411293 /* Onboarding.swift in Sources */,
 				CF7BA5B92B62830F00BF3257 /* ContentView.swift in Sources */,
 				CF7BA5B72B62830F00BF3257 /* LittleLemonApp.swift in Sources */,
 			);
