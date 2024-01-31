@@ -10,12 +10,10 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         TabView{
-            Color.gray
+            Menu()
                 .tabItem {
                     Label("Menu", systemImage: "list.dash")
                 }
-            
-            
         }
     }
 }

@@ -17,7 +17,7 @@ struct Onboarding: View {
     @State var firstName = ""
     @State var lastName = ""
     @State var email = ""
-    @State var isLoggedIn = false
+    @State var isLoggedIn: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -29,22 +29,22 @@ struct Onboarding: View {
                 
                 TextField("email",text: $email)
                 
-                NavigationLink(destination: EmptyView(), isActive: $isLoggedIn) {
-                    Text("Go to Profile")
+                Button {
+                    //Code here before changing the bool value
+                    firstName = ""
+                    lastName = ""
+                    email = ""
+                    isLoggedIn = true
+                } label: {
+                    Text("Navigate Button")
                 }
+                .navigationDestination(isPresented: $isLoggedIn, destination: {
+                    Home()
+                        .navigationBarBackButtonHidden(true)
+                })
                 
-                Button("Register") {
-                    //code
-                    if !firstName.isEmpty, !lastName.isEmpty, !email.isEmpty {
-                        //condition
-                        UserDefaults.standard.set(firstName, forKey: kFirstName)
-                        
-                        UserDefaults.standard.set(lastName, forKey: kLastName)
-                        
-                        UserDefaults.standard.set(email, forKey: kEmail)
-                    }
-                }
-            }
+                //.navigationTitle("LittleLemon")
+            }//v
         }//nav
     }//body
 }//end
